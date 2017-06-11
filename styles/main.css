@@ -1,0 +1,49 @@
+.canvas{
+	border: 1px dashed grey;
+	margin: 0 -1px;
+}
+
+.editor{
+	display: inline-block;
+	margin-bottom: auto;
+}
+
+.panel{
+	display: inline-block;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.controllers{
+	display: block;
+	border: 1px dashed grey;
+	margin: 10px;
+	margin-top: 0px;
+	padding: 10px;
+	text-align: center;
+}
+
+.controllers > p{
+	margin: 0px;
+}
+
+#saveImage{
+	width: 100px;
+	height: 100px;
+	display: block;
+	margin: 10px auto;
+	border: 1px solid #E7E7E7;
+}
+
+.sizeInput{
+	display: block;
+	width: 100px;
+	margin: 10px auto;
+	margin-bottom: 10px;
+}

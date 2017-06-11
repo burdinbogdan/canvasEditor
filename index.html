@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Canvas Editor</title>
+
+	<link rel="stylesheet" href="styles/main.css">
+
+</head>
+<body>
+
+	<div class="editor">
+		<div class="panel left">
+			<div class='controllers'>
+			  <input type="radio" name="tools" value="pencil" checked> Pencil<br>
+			  <input type="radio" name="tools" value="line"> Line<br>
+			  <input type="radio" name="tools" value="circle"> Circle<br>
+			  <input type="radio" name="tools" value="rectangle"> Rectangle<br>
+			</div>
+			<div class='controllers'>
+			  <input type="checkbox" name="fills" value="fills"> Fills<br>
+			</div>
+			<div class='controllers'>
+			  <p>Color: </p>
+			  <input type="color" name="color" value="#000000">
+			</div>
+			<div class='controllers'>
+			  <p>Line width: </p>
+			  <input type="range" name="line-width" value="1"  min="1" max="10">
+			</div>
+		</div>
+
+		<canvas class	='canvas' width="400" height="400"></canvas>
+
+		<div class="panel right">
+			<div class='controllers'>
+			  <input type="button"  name="clean" value="clean">
+			</div>
+			<div class='controllers'>
+			  <input type="button"  name="prevStep" value="prev">
+			  <input type="button"  name="nextStep" value="next">
+			</div>
+			<div class='controllers'>
+			  <img id=saveImage>
+			  <input type="button"  name="save" value="save">
+			  <input type="button"  name="read" value="read">
+			</div>
+			<div class='controllers'>
+			  <p>Canvas size: </p>
+			  <input type="text" class='sizeInput' name="width" placeholder="width in px" pattern="^[0-9]+$">
+			  <input type="text" class='sizeInput' name="height" placeholder="height in px" pattern="^[0-9]+$">
+			  <input type="button"  name="size" value="set size">
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src='js/build.js'></script>
+
+</body>
+</html>
