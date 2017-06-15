@@ -1,7 +1,7 @@
 module.exports = {
 	entry: './js/mainCtrl.js',
 	output: {
-        path: "/js",
+        path: __dirname + "/js",
 		filename: 'build.js'
 	},
 

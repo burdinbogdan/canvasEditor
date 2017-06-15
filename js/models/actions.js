@@ -2,7 +2,7 @@ let actions = [];
 let currentStep = 0;
 
 class Actions {
-	addAction(act) {
+	static addAction(act) {
 		actions.length = currentStep;
 		actions[actions.length] = act;
 		this.stepForward();
@@ -46,4 +46,4 @@ class Actions {
 	}
 }
 
-export default new Actions();
+export default Actions;
